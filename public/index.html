@@ -1,422 +1,823 @@
-<!-- Created by 11Hopem -->
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<!-- Created by 11Hopem -->
+<html lang="tr" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Sitesi Fikirleri & Girişim Laboratuvarı — 11Hopem Venture Lab</title>
-  <meta name="description" content="Yüksek dönüşümlü, popüler ve karlı web sitesi, Micro-SaaS ve dijital ürün fikirleri kataloğu. 11Hopem güvencesiyle.">
-  <meta name="keywords" content="web sitesi fikirleri, saas fikirleri, dijital ürün fikirleri, startup fikirleri, karlı web projeleri, micro saas 2026">
-  <meta name="author" content="11Hopem">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://web-site-fikirleri.vercel.app/">
-
-  <!-- 1:1 Identity Favicons Standard -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="11Hopem Venture Lab">
-  <meta property="og:title" content="Web Sitesi Fikirleri & Girişim Laboratuvarı">
-  <meta property="og:description" content="Yüksek dönüşümlü, trend ve karlı dijital ürün / web platformu fikirleri bankası.">
-  <meta property="og:url" content="https://web-site-fikirleri.vercel.app/">
-  <meta property="og:image" content="https://web-site-fikirleri.vercel.app/og-image.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11Hopem AI Ideas & Innovation Vault | Yapay Zeka İle Yapılabilecek Her Şey</title>
+  <meta name="description" content="Otonom Ajanlar, Sesli AI, Bilgisayarlı Görü, Dikey SaaS, Üretken Medya ve DevTools ile hayata geçirilebilecek 20 devasa yapay zeka girişim ve proje fikri." />
+  <meta name="author" content="11Hopem" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:title" content="11Hopem AI Ideas Vault | Yapay Zeka İle Yapılabilecek Her Şey" />
+  <meta property="og:description" content="2026'nın en popüler 20 yapay zeka iş modeli, otonom ajanlar ve dikey SaaS mimarileri." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:type" content="website" />
 
   <!-- Tailwind CSS & Lucide Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#F5F3FF',
+              100: '#EDE9FE',
+              500: '#8B5CF6',
+              600: '#7C3AED',
+              700: '#6D28D9',
+              900: '#4C1D95',
+            },
+            cyan: {
+              400: '#22D3EE',
+              500: '#06B6D4',
+            },
+            dark: {
+              900: '#090D16',
+              850: '#0D1322',
+              800: '#131B2E',
+              700: '#1E293B',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #090D16;
+      color: #F8FAFC;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass {
+      background: rgba(19, 27, 46, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-hover:hover {
+      background: rgba(26, 37, 64, 0.85);
+      border-color: rgba(139, 92, 246, 0.4);
+      transform: translateY(-2px);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #A78BFA 0%, #22D3EE 50%, #F472B6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+    }
+  </style>
 </head>
-<body class="bg-[#080816] text-slate-100 antialiased min-h-screen flex flex-col font-sans selection:bg-purple-500 selection:text-white">
+<body class="min-h-screen flex flex-col antialiased selection:bg-brand-500 selection:text-white">
 
-  <!-- Top Notification -->
-  <aside class="bg-[#0F0F28] border-b border-purple-500/20 text-xs py-2 px-4 backdrop-blur relative z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between text-slate-300">
-      <div class="flex items-center gap-2">
-        <span class="inline-flex items-center gap-1.5 font-bold text-cyan-400">
-          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-yellow-400"></i>
-          <span>11Hopem Girişim & Fikir Laboratuvarı</span>
-        </span>
-        <span class="hidden md:inline text-slate-600">|</span>
-        <span class="hidden md:inline text-slate-400">2026 Trendi Yüksek Dönüşümlü 12 Popüler Dijital Ürün Konsepti</span>
-      </div>
-      <div class="text-purple-400 font-mono text-[11px] sm:text-xs font-semibold">
-        Sıfır Boş Teori · %100 Doğrulanmış Pazar İhtiyacı
-      </div>
-    </div>
-  </aside>
-
-  <!-- Navigation -->
-  <header class="sticky top-0 z-40 bg-[#080816]/90 backdrop-blur-md border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+  <!-- Top Announcement Bar -->
+  <header class="border-b border-white/10 bg-dark-850/80 sticky top-0 z-40 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500/20 to-cyan-500/10 p-0.5 border border-purple-500/30">
-          <img src="/assets/logo.svg" alt="Venture Lab Logo" class="w-full h-full rounded-[10px]">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-cyan-400 p-0.5 shadow-lg shadow-brand-500/20">
+          <div class="w-full h-full bg-dark-900 rounded-[10px] flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400"></i>
+          </div>
         </div>
         <div>
-          <span class="font-extrabold text-base sm:text-lg text-white">Web Fikir Atölyesi</span>
-          <p class="text-[11px] text-slate-400">11Hopem Digital Product & SaaS Vault</p>
+          <span class="font-bold text-lg tracking-tight flex items-center gap-2">
+            11Hopem <span class="text-xs px-2 py-0.5 rounded-full bg-brand-500/20 text-brand-400 border border-brand-500/30">AI Vault</span>
+          </span>
+          <p class="text-[11px] text-slate-400">Yapay Zeka İle Yapılabilecek Her Şey</p>
         </div>
       </div>
 
-      <div class="flex items-center gap-3 text-xs">
-        <a href="https://11hopem.com" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 font-medium">11Hopem Ana Vitrini ↗</a>
+      <div class="flex items-center gap-3 sm:gap-4">
+        <a href="https://github.com/umutocguder/web-site-fikirleri" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 hover:border-white/20 text-xs text-slate-300 hover:text-white transition">
+          <i data-lucide="github" class="w-4 h-4"></i> GitHub Private
+        </a>
+        <a href="https://11hopem.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-brand-600 to-cyan-500 hover:opacity-95 text-xs font-semibold text-white shadow-md shadow-brand-500/25 transition">
+          11Hopem <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+        </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-10">
-    
-    <div class="text-center max-w-3xl mx-auto space-y-4">
-      <span class="inline-block text-xs font-mono uppercase tracking-widest text-purple-400 bg-purple-950/60 px-3 py-1 rounded-full border border-purple-800/50">Venture Studio & Idea Vault</span>
-      <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-        Yüksek Dönüşümlü & Popüler <br class="hidden sm:inline">
-        <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">Web Sitesi ve SaaS Fikirleri</span>
+  <section class="relative overflow-hidden py-14 sm:py-20 border-b border-white/5">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-900/30 via-dark-900/0 to-transparent pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-cyan-300 mb-6 badge-glow">
+        <i data-lucide="cpu" class="w-3.5 h-3.5"></i> 2026 AI Innovation & Venture Studio
+      </div>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight">
+        Yapay Zeka İle Yapılabilecek <span class="gradient-text">Her Şey</span>
       </h1>
-      <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-        Pazarda gerçek bir acıyı çözen, müşterinin para ödemeye hazır olduğu, 11Hopem altyapısıyla 3-7 günde MVP'si çıkarılabilecek 12 seçkin web platformu modeli.
+      <p class="mt-4 text-slate-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+        Sadece web siteleri değil; otonom AI ajanları, gerçek zamanlı ses santralleri, bilgisayarlı görü denetçileri, dikey B2B SaaS'lar ve donanım RAG cihazları. 11Hopem hızında hayata geçmeye hazır 20 devasa fırsat.
       </p>
 
-      <!-- Search & Filters -->
-      <div class="pt-4 flex flex-col sm:flex-row items-center gap-3 justify-center">
-        <div class="relative w-full max-w-md">
-          <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400"></i>
-          <input type="text" id="searchInput" placeholder="Fikirlerde ara (örn: inşaat, villa, yorum, whatsapp, hekim)..." 
-                 class="w-full bg-[#0F0F28] border border-slate-700/80 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-400">
+      <!-- Key Metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto mt-10">
+        <div class="glass p-3.5 sm:p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-white mono">20</div>
+          <div class="text-xs text-slate-400 mt-1">Derinlemesine AI Fikri</div>
+        </div>
+        <div class="glass p-3.5 sm:p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-cyan-400 mono">7</div>
+          <div class="text-xs text-slate-400 mt-1">Çekirdek AI Dikeyi</div>
+        </div>
+        <div class="glass p-3.5 sm:p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-brand-400 mono">5-8 Gün</div>
+          <div class="text-xs text-slate-400 mt-1">Ortalama MVP Süresi</div>
+        </div>
+        <div class="glass p-3.5 sm:p-4 rounded-xl text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-emerald-400 mono">%100</div>
+          <div class="text-xs text-slate-400 mt-1">Hazır Mimari & Kod</div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Category Filter Pills -->
-      <div class="flex flex-wrap items-center justify-center gap-2 pt-2" id="categoryTabs">
-        <button class="cat-pill active bg-purple-600 text-white font-bold text-xs px-3.5 py-1.5 rounded-xl transition" data-cat="ALL">Tümü (12)</button>
-        <button class="cat-pill bg-[#0F0F28] hover:bg-slate-800 text-slate-300 font-medium text-xs px-3.5 py-1.5 rounded-xl border border-slate-800 transition" data-cat="AI">Yapay Zekâ & Otomasyon</button>
-        <button class="cat-pill bg-[#0F0F28] hover:bg-slate-800 text-slate-300 font-medium text-xs px-3.5 py-1.5 rounded-xl border border-slate-800 transition" data-cat="BOOKING">Hizmet & Rezervasyon</button>
-        <button class="cat-pill bg-[#0F0F28] hover:bg-slate-800 text-slate-300 font-medium text-xs px-3.5 py-1.5 rounded-xl border border-slate-800 transition" data-cat="B2B">B2B & KOBİ CRM</button>
-        <button class="cat-pill bg-[#0F0F28] hover:bg-slate-800 text-slate-300 font-medium text-xs px-3.5 py-1.5 rounded-xl border border-slate-800 transition" data-cat="EDTECH">EdTech & Eğitim</button>
-        <button class="cat-pill bg-[#0F0F28] hover:bg-slate-800 text-slate-300 font-medium text-xs px-3.5 py-1.5 rounded-xl border border-slate-800 transition" data-cat="MARKETPLACE">Pazar Yeri & Kiralama</button>
+  <!-- Main Exploration Area -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow">
+    
+    <!-- Controls: Search & Category Pills -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+      
+      <!-- Category Filters -->
+      <div class="flex flex-wrap gap-2 w-full md:w-auto" id="categoryContainer">
+        <button onclick="filterCategory('all')" data-cat="all" class="cat-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium transition bg-brand-600 text-white shadow-sm shadow-brand-500/30">
+          🌐 Tümü (20)
+        </button>
+        <button onclick="filterCategory('01-otonom-ajanlar-ve-otomasyon')" data-cat="01-otonom-ajanlar-ve-otomasyon" class="cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition">
+          🤖 Otonom Ajanlar
+        </button>
+        <button onclick="filterCategory('02-sesli-yapay-zeka-ve-iletisim')" data-cat="02-sesli-yapay-zeka-ve-iletisim" class="cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition">
+          🎙️ Sesli AI & Santral
+        </button>
+        <button onclick="filterCategory('03-bilgisayarli-goru-ve-multimodal')" data-cat="03-bilgisayarli-goru-ve-multimodal" class="cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition">
+          👁️ Bilgisayarlı Görü
+        </button>
+        <button onclick="filterCategory('04-dikey-ai-saas-ve-sektorel')" data-cat="04-dikey-ai-saas-ve-sektorel" class="cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition">
+          💼 Dikey AI SaaS
+        </button>
+        <button onclick="filterCategory('05-uretken-medya-ve-pazarlama')" data-cat="05-uretken-medya-ve-pazarlama" class="cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition">
+          🎨 Üretken Medya & Video
+        </button>
+        <button onclick="filterCategory('06-egitim-edtech-ve-kisisel-ai')" data-cat="06-egitim-edtech-ve-kisisel-ai" class="cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition">
+          🎓 Kişisel AI & Eğitim
+        </button>
+        <button onclick="filterCategory('07-gelistirici-ve-operasyon-ai')" data-cat="07-gelistirici-ve-operasyon-ai" class="cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition">
+          ⚡ DevTools & Veri
+        </button>
+      </div>
+
+      <!-- Real-time Search -->
+      <div class="relative w-full md:w-72">
+        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+        <input 
+          type="text" 
+          id="searchInput" 
+          onkeyup="searchCards()" 
+          placeholder="Yapay zeka, model veya sektör ara..." 
+          class="w-full pl-10 pr-4 py-2 bg-dark-850 border border-white/10 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition"
+        />
       </div>
     </div>
 
-    <!-- Ideas Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="ideasGrid">
-      <!-- Injected via JavaScript -->
+    <!-- Cards Grid -->
+    <div id="ideasGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="noResults" class="hidden text-center py-16">
+      <i data-lucide="search-x" class="w-12 h-12 text-slate-500 mx-auto mb-3"></i>
+      <h3 class="text-base font-semibold text-slate-300">Aradığınız kritere uygun AI fikri bulunamadı</h3>
+      <p class="text-xs text-slate-500 mt-1">Farklı bir anahtar kelime deneyebilir veya kategorileri sıfırlayabilirsiniz.</p>
     </div>
 
   </main>
 
+  <!-- Modal Component -->
+  <div id="ideaModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative glass border border-white/15 bg-dark-900 rounded-2xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+      
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-1 rounded-lg bg-white/5 hover:bg-white/10 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-2 mb-3">
+        <span id="modalCategoryBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/30"></span>
+        <span id="modalScoreBadge" class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mono"></span>
+      </div>
+
+      <h2 id="modalTitle" class="text-2xl font-bold text-white mb-2"></h2>
+      <p id="modalSlogan" class="text-sm text-cyan-300 italic mb-6"></p>
+
+      <div class="space-y-6 text-sm text-slate-300 leading-relaxed border-t border-white/10 pt-6">
+        <div>
+          <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2 flex items-center gap-2">
+            <i data-lucide="alert-circle" class="w-4 h-4 text-red-400"></i> Problem & Fırsat
+          </h4>
+          <p id="modalProblem" class="text-slate-300"></p>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2 flex items-center gap-2">
+            <i data-lucide="cpu" class="w-4 h-4 text-brand-400"></i> AI Mimarisi & Temel Yetenekler
+          </h4>
+          <ul id="modalFeatures" class="list-disc list-inside space-y-1 text-slate-300"></ul>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-dark-850 p-4 rounded-xl border border-white/5">
+          <div>
+            <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1 flex items-center gap-1.5">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-cyan-400"></i> Hedef Kitle (ICP)
+            </h4>
+            <p id="modalAudience" class="text-xs text-slate-300"></p>
+          </div>
+          <div>
+            <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1 flex items-center gap-1.5">
+              <i data-lucide="dollar-sign" class="w-3.5 h-3.5 text-emerald-400"></i> Gelir & Fiyatlandırma
+            </h4>
+            <p id="modalRevenue" class="text-xs text-slate-300"></p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2 flex items-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4 text-blue-400"></i> Dünya Benchmarkları & Örnekler
+          </h4>
+          <p id="modalBenchmarks" class="text-xs text-slate-400"></p>
+        </div>
+
+        <div class="flex items-center justify-between pt-4 border-t border-white/10 text-xs text-slate-400">
+          <div>Önerilen AI Stack: <span id="modalStack" class="text-white font-medium"></span></div>
+          <div>Tahmini MVP: <span id="modalMVP" class="text-brand-300 font-medium"></span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="bg-[#050510] border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-4 space-y-2">
-      <p>Created by <a href="https://11hopem.com" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:underline font-semibold">11Hopem</a> · Copyright &copy; 2026 11Hopem. Tüm hakları saklıdır.</p>
-      <p class="text-slate-600 text-[11px]">Venture Studio & Product Strategy Lab · https://11hopem.com</p>
+  <footer class="border-t border-white/10 bg-dark-850 py-8 text-xs text-slate-400 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        Created by <a href="https://11hopem.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-400 font-semibold transition">11Hopem</a>. All rights reserved.
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="/degerlendirme-matrisi.md" target="_blank" class="hover:text-white transition flex items-center gap-1">
+          <i data-lucide="table" class="w-3.5 h-3.5"></i> 20 Puanlık Değerlendirme Matrisi
+        </a>
+        <a href="https://github.com/umutocguder/web-site-fikirleri" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1">
+          <i data-lucide="git-branch" class="w-3.5 h-3.5"></i> GitHub Repo
+        </a>
+      </div>
     </div>
   </footer>
 
-  <!-- SCRIPT DATA & APP -->
+  <!-- Ideas Data & Application Logic -->
   <script>
-    const IDEAS = [
+    const ideasData = [
       {
         id: "01",
-        title: "TenderForge AI",
-        tagline: "Müteahhit ve Taşeron İçin AI Teklif & Hakediş Motoru",
-        category: "AI",
-        categoryLabel: "Yapay Zekâ & Otomasyon",
-        badge: "🔥 Çok Yüksek Talep",
-        score: "9.6 / 10",
-        buildDays: "4 - 6 Gün",
-        revenueModel: "SaaS Abonelik (790 ₺/ay)",
-        problem: "Taşeronlar şantiyede el yazısıyla tuttukları metrajları Excel'de Çevre ve Şehircilik Bakanlığı pozlarıyla teklife dönüştürürken günlerce vakit kaybediyor.",
-        solution: "El yazısı metraj defterinin fotoğrafını yükle; yapay zekâ metrajı okusun, güncel birim fiyatlarla antetli kurumsal PDF teklif mektubu ve WhatsApp mesajı üretsin.",
-        target: "İnşaat taşeronları, şantiye şefleri, elektrik/mekanik ustaları, dekorasyon firmaları.",
-        benchmark: "Togal.AI ($100M+ değerleme), Buildxact",
-        features: ["Görselden Metraj OCR", "Bakanlık Poz Kütüphanesi", "Resmi PDF Çıktısı", "WhatsApp Paylaşım"]
+        category: "01-otonom-ajanlar-ve-otomasyon",
+        categoryLabel: "Otonom Ajanlar",
+        title: "RefundOps AI",
+        tag: "Çoklu Ajan & Otonom İade",
+        score: "19/20",
+        slogan: "Sadece sohbet etmeyen; kargo ve banka API'sine bağlanıp 14 gün kuralına göre 15 saniyede otonom para iadesi yapan çoklu ajan sistemi.",
+        problem: "Mevcut chatbotlar kargo veya iade yapamıyor. E-ticaret siteleri iadeler için 5-10 kişilik müşteri destek ekibi istihdam etmek zorunda kalıyor.",
+        features: [
+          "Çoklu Ajan Orkestrasyonu (Intent, FraudChecker, PaymentGateway).",
+          "Shopify, WooCommerce, Iyzico ve Kargo REST API fonksiyon çağrıları.",
+          "Hasarlı ürün fotoğrafları için Gemini Multimodal hasar onayı.",
+          "Sorunlu veya şüpheli durumlarda insan temsilciye otomatik özetli devir."
+        ],
+        audience: "Ayda 500+ sipariş alan Shopify/WooCommerce e-ticaret siteleri ve D2C butikler.",
+        revenue: "Başlangıç: 2.900 ₺/ay · Scale: 7.500 ₺/ay + İşlem başı 2 ₺.",
+        benchmarks: "Klarna AI Assistant (700 temsilcinin işini yaptı), Fin by Intercom, Sierra AI.",
+        stack: "Python FastAPI + LangGraph / AutoGen + Gemini 1.5 Pro + Shopify/Iyzico API",
+        mvp: "6 - 8 Gün"
       },
       {
         id: "02",
-        title: "TrustPulse Local",
-        tagline: "Yerel İşletmeler İçin Google İtibar & Yorum Booster",
-        category: "AI",
-        categoryLabel: "Yapay Zekâ & İtibar",
-        badge: "⭐ Anında Satış",
-        score: "9.7 / 10",
-        buildDays: "3 - 5 Gün",
-        revenueModel: "2.500 ₺ Kurulum + 690 ₺/ay",
-        problem: "Memnun kalan müşteri yorum yazmazken, ufak bir sorun yaşayan 1 yıldız veriyor. Google puanı 4.0'ın altına düşen restoran ve klinik müşteri kaybediyor.",
-        solution: "Masaya akıllı NFC/QR standı koy. 5 yıldız verenler Google Haritalar'a yönlendirilsin; 1-3 yıldız verenlerin şikayeti Google'a düşmeden önce işletme sahibinin WhatsApp'ına özel uyarı olarak gitsin.",
-        target: "Özel diş klinikleri, butik restoranlar, veterinerler, güzellik merkezleri, oto servisleri.",
-        benchmark: "Birdeye ($100M+ ARR), Podium, NiceJob",
-        features: ["Akıllı QR Filtreleme", "Negatif Yorum Kalkanı", "AI Otomatik Yorum Yanıtlayıcı", "WhatsApp Uyarı"]
+        category: "01-otonom-ajanlar-ve-otomasyon",
+        categoryLabel: "Otonom Ajanlar",
+        title: "LeadScout AI",
+        tag: "Otonom B2B Satış Temsilcisi",
+        score: "18/20",
+        slogan: "Hedef sektördeki şirketleri bulan, sitelerini ve son haberlerini okuyup tamamen o şirkete özel ilk temas mesajını hazırlayan otonom B2B satış ajanı.",
+        problem: "Toplu soğuk e-postalar spam'e düşüyor ve dönüşüm oranı %1'in altında. Manuel araştırma ise satış temsilcisinin saatlerini alıyor.",
+        features: [
+          "Google Maps ve LinkedIn üzerinden hedef şirketleri otomatik tarama.",
+          "Şirketin kariyer ilanlarını ve eksik teknolojilerini tespit eden analizör.",
+          "Hiper-kişiselleştirilmiş 3 adımlı takip e-postası üretim motoru.",
+          "Cevap geldiğinde takvim linkiyle insan temsilciye bildirim."
+        ],
+        audience: "B2B SaaS şirketleri, dijital pazarlama ajansları ve bağımsız danışmanlar.",
+        revenue: "Aylık SaaS: 1.990 ₺ - 4.900 ₺/ay · Ajans White-Label: 12.000 ₺/ay.",
+        benchmarks: "Clay.com (1.3 milyar $ değerleme), 11x.ai (Alice BDR), Artisan AI.",
+        stack: "Gemini 1.5 Flash + Firecrawl / Puppeteer + Resend API + Supabase",
+        mvp: "5 - 7 Gün"
       },
       {
         id: "03",
-        title: "VoiceSite Studio",
-        tagline: "Usta ve Uzmanlar İçin Sesli WhatsApp Portfolyo Kurucu",
-        category: "AI",
-        categoryLabel: "Yapay Zekâ & Yerel",
-        badge: "🚀 Milyonluk Pazar",
-        score: "9.3 / 10",
-        buildDays: "4 - 6 Gün",
-        revenueModel: "1.490 ₺ / yıl",
-        problem: "Tesisatçı, marangoz veya antrenörlerin bilgisayarı ve web sitesi yok. Ajanslar 25.000 ₺ istiyor, kendileri yapamıyor.",
-        solution: "Usta WhatsApp botuna 30 saniyelik ses kaydı ve yaptığı işin 4 fotoğrafını atar; bot metinleri yazar, mobil uyumlu hızlı bir vitrin sitesi oluşturur.",
-        target: "Bağımsız zanaatkarlar, kişisel antrenörler, döşemeciler, kuaförler.",
-        benchmark: "Durable.co ($14M Yatırım), B12.io",
-        features: ["WhatsApp Sesle Site Üretimi", "Öncesi/Sonrası Kaydırıcı", "Hemen Ara Butonları", "Yerel SEO"]
+        category: "01-otonom-ajanlar-ve-otomasyon",
+        categoryLabel: "Otonom Ajanlar",
+        title: "BidForge AI",
+        tag: "İhale Şartname & Teklif Ajanı",
+        score: "18/20",
+        slogan: "EKAP ve özel ihale platformlarındaki yüzlerce sayfalık şartname PDF'lerini okuyup riskleri raporlayan ve taslak teklif dosyasını hazırlayan ihale mühendisi.",
+        problem: "100-200 sayfalık teknik şartnamelerdeki cezai şartlar gözden kaçıyor ve şirketler milyonlarca lira zarar ediyor. Teklif hazırlamak 1 haftayı buluyor.",
+        features: [
+          "2 Milyon token bağlamıyla tüm şartname eklerini tek seferde analiz.",
+          "Şirketin yeterlilik belgeleri (ISO, ciro, referans) ile otomatik çapraz denetim.",
+          "Şartnamedeki ağır cezaları kırmızı bayrak olarak özetleme.",
+          "Poz numaralı Excel teklif cetveli ve idari dilekçeleri otomatik oluşturma."
+        ],
+        audience: "Kamu ve özel sektör ihalelerine katılan müteahhitler, medikal ve IT tedarikçileri.",
+        revenue: "KOBİ: 4.900 ₺/ay · Kurumsal: 14.900 ₺/ay · İhale başı: 1.500 ₺.",
+        benchmarks: "AutogenAI (39M $ fonlanan İngiliz ihale AI platformu), GovDash.",
+        stack: "Gemini 1.5 Pro + PyPDF / PyMuPDF + LangChain RAG + Next.js",
+        mvp: "7 - 9 Gün"
       },
       {
         id: "04",
-        title: "StayDirect Studio",
-        tagline: "Butik Villa & Tiny House Direkt Rezervasyon Portalı",
-        category: "BOOKING",
-        categoryLabel: "Hizmet & Rezervasyon",
-        badge: "💎 Yüksek Bütçeli Müşteri",
-        score: "9.5 / 10",
-        buildDays: "5 - 7 Gün",
-        revenueModel: "20.000 ₺ Kurulum + 3.500 ₺/yıl",
-        problem: "Villa ve tiny house sahipleri Airbnb ve Booking'e her rezervasyonda %18-%25 komisyon ödüyor. Kendi Instagram'larından gelen müşterilere amatörce IBAN atıyorlar.",
-        solution: "Airbnb takvimiyle iki yönlü (iCal) senkronize çalışan, sanal POS ile kapora alan, çoklu dilli ve yerel rehber içeren lüks direkt rezervasyon sitesi.",
-        target: "Sapanca, Kaş, Fethiye, Bodrum havuzlu villa ve tiny house işletmecileri.",
-        benchmark: "Lodgify ($50M+ Değerleme), OwnerRez",
-        features: ["iCal Çift Yönlü Takvim", "Sanal POS Kapora Motoru", "Misafir Karşılama Rehberi", "Çoklu Para Birimi"]
+        category: "02-sesli-yapay-zeka-ve-iletisim",
+        categoryLabel: "Sesli AI & Santral",
+        title: "VoiceDesk AI",
+        tag: "7/24 Telefon Santral Ajanı",
+        score: "19/20",
+        slogan: "Çalan telefonu doğal Türkçe ile açan; rezervasyon oluşturan, menü/fiyat sorularını yanıtlayan ve randevuyu takvime işleyen gecikmesiz ses asistanı.",
+        problem: "Restoranlar ve klinikler yoğun saatlerde günde 30-50 aramayı kaçırıyor. Tuşlamalı robotik santraller müşteriyi bezdiriyor.",
+        features: [
+          "WebRTC üzerinden 300 ms altı ultra düşük gecikmeli konuşma akışı.",
+          "Telefon görüşmesi anında Google Takvim / Rezerve API'sine fonksiyon çağrısı.",
+          "Görüşme biter bitmez konumu ve rezervasyon kodunu SMS/WhatsApp ile iletme.",
+          "Özel veya agresif durumlarda aramayı işletme sahibinin cep telefonuna canlı aktarma."
+        ],
+        audience: "Rezervasyonlu restoranlar, özel diş klinikleri, güzellik merkezleri, 7/24 acil servisler.",
+        revenue: "Kurulum: 3.500 ₺ + Aylık Sabit: 1.900 ₺/ay (300 dk) + Ekstra: 2.50 ₺/dk.",
+        benchmarks: "Bland AI (milyonlarca çağrı yapan dev), Retell AI, Vapi.ai.",
+        stack: "Gemini 3.8 Live / OpenAI Realtime + Twilio / Netgsm SIP + ElevenLabs",
+        mvp: "6 - 8 Gün"
       },
       {
         id: "05",
-        title: "SmileCost Clinic Hub",
-        tagline: "Özel Klinik & Diş Hekimliği Tedavi Hesaplayıcı Hub",
-        category: "BOOKING",
-        categoryLabel: "Hizmet & Sağlık",
-        badge: "💉 Yüksek Dönüşüm",
-        score: "9.4 / 10",
-        buildDays: "4 - 6 Gün",
-        revenueModel: "25.000 ₺ Kurulum + 1.500 ₺/ay",
-        problem: "Klinikler reklamlara on binlerce lira harcıyor ama ziyaretçiler fiyat ve süreç bilmediği için randevu almadan çıkıyor.",
-        solution: "İnteraktif diş şeması üzerinde eksik dişleri seçtiren, tedavi türüne göre yaklaşık maliyet simüle eden ve doğrudan hekime WhatsApp konsültasyonu açan akıllı portal.",
-        target: "Özel diş klinikleri, estetik merkezleri, saç ekim klinikleri, sağlık turizmi acenteleri.",
-        benchmark: "SmilePath, Qunomedical",
-        features: ["İnteraktif Diş Haritası", "Tedavi Bütçe Simülatörü", "Gülüş Galerisi", "Sağlık Turizmi Çoklu Dil"]
+        category: "02-sesli-yapay-zeka-ve-iletisim",
+        categoryLabel: "Sesli AI & Santral",
+        title: "PolyVoice AI",
+        tag: "Ses Klonu & Dudak Senkron Dublaj",
+        score: "15/20",
+        slogan: "Türkçe video veya ders içeriğini konuşmacının kendi ses tonu ve tam dudak senkronuyla İngilizce, Almanca ve Arapça'ya çeviren dublaj stüdyosu.",
+        problem: "Türkçe içerikler küresel pazara açılamıyor; YouTube'da ABD izlenmeleri 10 kat daha fazla kazandırıyor ama profesyonel dublaj sanatçısı çok pahalı.",
+        features: [
+          "10 saniyelik ses örneğinden konuşmacının ses karakteristiğini klonlama.",
+          "Deyimleri ve kültürel esprileri hedef dile bağlamsal çeviren LLM motoru.",
+          "Wav2Lip / LivePortrait ile videodaki dudak hareketlerini yeni dile göre yeniden çizme."
+        ],
+        audience: "Global kitleye açılmak isteyen YouTuber'lar, online kurs hocaları ve e-ihracat markaları.",
+        revenue: "Dakika başı: 25 ₺ · Aylık Creator: 1.490 ₺/ay · Ajans: 4.900 ₺/ay.",
+        benchmarks: "HeyGen (milyar dolarlık video AI lideri), Rask AI, ElevenLabs Dubbing.",
+        stack: "Whisper + Gemini 1.5 Pro + ElevenLabs + SadTalker / Sync Labs + FFmpeg",
+        mvp: "7 - 10 Gün"
       },
       {
         id: "06",
-        title: "LuxeInvite Suite",
-        tagline: "Lüks Etkinlik & İnteraktif Düğün Davetiye Suite",
-        category: "BOOKING",
-        categoryLabel: "Lüks Etkinlik & LCV",
-        badge: "💍 Viral Yayılım",
-        score: "9.6 / 10",
-        buildDays: "3 - 5 Gün",
-        revenueModel: "2.500 ₺ - 4.500 ₺ / etkinlik",
-        problem: "Kağıt davetiyeler çok pahalı ve kaç kişinin geleceği (LCV) asla bilinemiyor. Takı için IBAN göndermek ise nezaketsiz bulunuyor.",
-        solution: "Çifte özel web adresi: Müzik çalan, zaman sayacı olan, LCV toplayan, Spotify istek listesi alan ve dijital altın/balayı fonu sağlayan lüks davetiye sitesi.",
-        target: "Nişanlı çiftler, lüks düğün organizatörleri, kurumsal gala ve lansman ekipleri.",
-        benchmark: "Joy / WithJoy ($100M+), Zola, Bliss & Bone",
-        features: ["Dijital LCV Formu", "Spotify İstek Şarkı", "Dijital Takı Fonu", "Düğün Günü Canlı Foto Duvarı"]
+        category: "02-sesli-yapay-zeka-ve-iletisim",
+        categoryLabel: "Sesli AI & Santral",
+        title: "ActionNote AI",
+        tag: "Toplantı Noteri & Görev Dağıtıcı",
+        score: "18/20",
+        slogan: "Google Meet, Zoom ve telefon görüşmelerini dinleyen; kimin ne söylediğini ayıran ve aksiyon maddelerini Trello, Notion ve Jira'ya otomatik görev kartı olarak açan ajan.",
+        problem: "1 saatlik toplantılarda alınan kararlar unutuluyor; kimse 20 sayfalık transkript okumuyor. Aksiyonların takip edilememesi projeleri geciktiriyor.",
+        features: [
+          "Takvimdeki toplantıya otomatik katılan sessiz dinleyici bot.",
+          "Konuşmacı ayrımı (Diarization) ile kimin konuştuğunu etiketleme.",
+          "Toplantı biter bitmez Trello, Jira ve Slack'e sorumlu kişiyi atayarak kart açma."
+        ],
+        audience: "Yazılım takımları, dijital ajanslar, hukuk müşavirlikleri ve operasyon yöneticileri.",
+        revenue: "Bireysel: 190 ₺/ay · Takım: 790 ₺/ay · Kurumsal Sunucu: 2.900 ₺/ay.",
+        benchmarks: "Otter.ai, Fireflies.ai (100M $+ değerleme), Fathom.",
+        stack: "Deepgram Nova-2 + Gemini 1.5 Flash + Recall.ai API + Trello/Jira Webhooks",
+        mvp: "5 - 7 Gün"
       },
       {
         id: "07",
-        title: "ChatFlow CRM",
-        tagline: "WhatsApp Tabanlı Hafif Hizmet CRM'i",
-        category: "B2B",
-        categoryLabel: "B2B & KOBİ",
-        badge: "📈 Yüksek Retention",
-        score: "9.2 / 10",
-        buildDays: "6 - 8 Gün",
-        revenueModel: "490 ₺ - 990 ₺ / ay SaaS",
-        problem: "Sigorta acenteleri ve emlakçılar Salesforce gibi ağır sistemleri kullanamıyor; her şey WhatsApp'ta kayboluyor ve poliçe yenilemeleri kaçıyor.",
-        solution: "Müşteri kartlarını görsel Kanban panosunda tutan, poliçe bitimine 15 gün kala tek tıkla otomatik WhatsApp hatırlatması atan sade web paneli.",
-        target: "Sigorta acenteleri, emlak danışmanları, hukuk ofisleri, güzellik merkezleri.",
-        benchmark: "Privyr ($10M+ Değerleme), Kommo CRM",
-        features: ["Görsel Kanban Panosu", "Otomatik Vade Hatırlatıcı", "WhatsApp Şablonları", "Evrak Kasası"]
+        category: "03-bilgisayarli-goru-ve-multimodal",
+        categoryLabel: "Bilgisayarlı Görü",
+        title: "BuildVision AI",
+        tag: "Şantiye İSG & Kusur Gözü",
+        score: "15/20",
+        slogan: "Şantiye güvenlik kameralarından baretsiz/yeleksiz işçileri, tehlikeli alan ihlallerini ve beton çatlaklarını anında tespit edip şefe WhatsApp alarmı fırlatan sistem.",
+        problem: "Şantiye kazaları ve müfettiş cezaları müteahhitleri iflasa götürebiliyor. Şantiye şefinin 20 katlı projede her an her yeri denetlemesi imkansız.",
+        features: [
+          "YOLOv11 ile kask, fosforlu yelek ve emniyet kemeri tespiti.",
+          "Asansör boşluğu ve tehlikeli sanal sınır (Geofence) ihlallerini yakalama.",
+          "Cep telefonundan çekilen kolon fotoğraflarında çatlak ve donatı analizi.",
+          "Akşamları PDF formatında günlük İSG uyumluluk skoru raporu."
+        ],
+        audience: "İnşaat ve altyapı müteahhitleri, İSG uzmanları (OSGB) ve yapı denetim firmaları.",
+        revenue: "Kamera başı: 650 ₺/ay · 10 Kameralı Şantiye Paketi: 7.500 ₺/ay.",
+        benchmarks: "ViAct.ai (100M $+ Asya/Avrupa şantiye AI lideri), OpenSpace.ai.",
+        stack: "Python + YOLOv11 + RTSP Video Stream + Gemini 1.5 Flash + WhatsApp Cloud API",
+        mvp: "8 - 12 Gün"
       },
       {
         id: "08",
-        title: "ClientProof Studio",
-        tagline: "Ajans & Freelancer İçin Müşteri Onay ve Revizyon Portalı",
-        category: "B2B",
-        categoryLabel: "B2B Operasyon",
-        badge: "⚡ Süreç Hızlandırıcı",
-        score: "9.1 / 10",
-        buildDays: "5 - 7 Gün",
-        revenueModel: "490 ₺ - 790 ₺ / ay SaaS",
-        problem: "Tasarım bittiğinde müşteri WhatsApp'tan 20 ses kaydı atıyor; revizyonlar karışıyor ve son ödeme aylarca gecikiyor.",
-        solution: "Canlı web sayfası üzerine tıkla-yorumla arayüzü; tüm maddeler tamamlanınca müşteriden dijital teslim onayı alan resmi onay portalı.",
-        target: "Web tasarımcıları, yazılım ajansları, UI/UX freelancer'ları, video prodüksiyon ekipleri.",
-        benchmark: "MarkUp.io, Atarim ($5M+ ARR), Pastel",
-        features: ["Görsel İğnelemeli Revizyon", "Tamamlandı Kontrol Listesi", "Dijital Teslim Onayı", "Beyaz Etiketleme"]
+        category: "03-bilgisayarli-goru-ve-multimodal",
+        categoryLabel: "Bilgisayarlı Görü",
+        title: "ShelfEye AI",
+        tag: "Perakende Raf & Fiyat Denetçisi",
+        score: "14/20",
+        slogan: "Reyon fotoğraflarından boşalan rafları (Out-of-Stock) ve kasa ile raf arasındaki etiket fiyat farklarını saniyeler içinde yakalayan yapay zeka denetçisi.",
+        problem: "Müşterinin rafta bulamadığı ürün ciro kaybına yol açıyor (%4-8 kayıp). Raf ile kasa fiyatı uyuşmazlıkları ise tüketici hakem heyeti cezaları doğuruyor.",
+        features: [
+          "Ürün yüzlerini (Facing) sayma ve boşlukları santimetrik tespit.",
+          "OCR ile raftaki kağıt etiketi okuyup ERP fiyat veritabanıyla eşleştirme.",
+          "Merkez ofisin dizilim şablonuna (Planoğram) uyumluluk puanı çıkarma."
+        ],
+        audience: "Süpermarket zincirleri, FMCG markaları (Unilever, Nestlé saha ekipleri) ve kozmetik mağazaları.",
+        revenue: "Şube başı: 1.250 ₺/ay · FMCG Marka Saha Denetimi: 15.000 ₺/ay.",
+        benchmarks: "Trax Retail (2 milyar $ değerinde global perakende CV devi), ParallelDots.",
+        stack: "Ultralytics YOLOv11 + Google Cloud Vision / Gemini OCR + Flutter PWA",
+        mvp: "7 - 10 Gün"
       },
       {
         id: "09",
-        title: "ExamPass Hub",
-        tagline: "Üniversite Vize/Final Sınav Kurtarma Kampı Platformu",
-        category: "EDTECH",
-        categoryLabel: "EdTech & Üniversite",
-        badge: "🎓 Yüksek Marj",
-        score: "9.3 / 10",
-        buildDays: "4 - 6 Gün",
-        revenueModel: "%15 - %20 Pazar Yeri Komisyonu",
-        problem: "Mühendislik öğrencileri dönem boyu özel derse para yetiremiyor; ama sınavdan 3 gün önce geçmiş çıkmış soruları çözen 5 saatlik kampa seve seve para ödüyor.",
-        solution: "ODTÜ/İTÜ mezunu doğrulanmış hocalarla öğrencileri okul bazlı 5 saatlik sınav kurtarma kamplarında veya butik akran gruplarında buluşturan niş platform.",
-        target: "Mühendislik ve fen fakültesi lisans öğrencileri.",
-        benchmark: "Superprof, Özel Ders Alanı (Niş ve kamp odaklı hali)",
-        features: ["Okul Bazlı Kamp Kataloğu", "Doğrulanmış Hoca Profili", "Çıkmış Soru Paketi", "Akran Grubu Eşleştirme"]
+        category: "03-bilgisayarli-goru-ve-multimodal",
+        categoryLabel: "Bilgisayarlı Görü",
+        title: "ClaimVision AI",
+        tag: "Fotoğraftan Sigorta Ekspertizi",
+        score: "15/20",
+        slogan: "Kaza yapan aracın fotoğraflarını yükleyen kullanıcıya hasar gören parçaları listeleyen, değişecek/onarılacak ayrımını yapan ve tamir faturasını çıkaran yapay zeka.",
+        problem: "Ekspertiz süreci 10-15 gün sürüyor; sanayideki tamirhaneler gereksiz parça değişimiyle hasar dosyalarını %40-60 oranında şişiriyor.",
+        features: [
+          "Çizik, göçük, kırılma ve şasi hasarını şiddetine göre sınıflandırma.",
+          "Onarım vs. değişim karar motoru.",
+          "Güncel orijinal yedek parça piyasasıyla anında ön hasar cetveli."
+        ],
+        audience: "Kasko/sigorta şirketleri ve acenteleri, bağımsız eksperler ve araç kiralama filoları.",
+        revenue: "Ekspertiz başı: 150 ₺ - 350 ₺ · Filo Aboneliği: Araç başı 75 ₺/ay.",
+        benchmarks: "Tractable.ai (1 milyar $ değerinde sigorta hasar Unicorn'u), Snapsheet.",
+        stack: "PyTorch YOLOv11 Segmentasyon + Gemini 1.5 Pro Multimodal + PostgreSQL S3",
+        mvp: "8 - 12 Gün"
       },
       {
         id: "10",
-        title: "MinikHarfler",
-        tagline: "Oyunlaştırılmış İlkokul & Fonetik Okuma Akademisi",
-        category: "EDTECH",
-        categoryLabel: "EdTech & Çocuk",
-        badge: "👶 Sadık Veli Kitlesi",
-        score: "9.1 / 10",
-        buildDays: "5 - 7 Gün",
-        revenueModel: "199 ₺ / ay Veli Aboneliği",
-        problem: "1. sınıf öğrencileri geleneksel çalışma kitaplarından sıkılıyor; veliler harf ve hece birleştirmede çocukla çatışma yaşıyor.",
-        solution: "Perihan Hoca ekolüyle 31 yıllık pedagojik deneyimi sesli masallar, sürükle-bırak hece oyunları ve BİLSEM zeka parkurlarıyla oyunlaştıran web platformu.",
-        target: "İlkokul 1. sınıf öğrencileri, disleksi eğilimi olan çocuklar, BİLSEM adayları.",
-        benchmark: "ABCmouse (Milyar dolarlık pazar), Lingokids",
-        features: ["Ses-Hece Mini Oyunları", "Sesli Masal Kütüphanesi", "Haftalık Veli Karnesi", "BİLSEM Zeka Parkuru"]
+        category: "04-dikey-ai-saas-ve-sektorel",
+        categoryLabel: "Dikey AI SaaS",
+        title: "LexRedline AI",
+        tag: "Sözleşme Kırmızı Çizgi Analizörü",
+        score: "19/20",
+        slogan: "Sözleşmelerdeki cezai şartları ve fesih risklerini Türk Hukuk normlarına göre saniyeler içinde tarayan ve güvenli alternatif maddeler yazan yapay zeka hukuk asistanı.",
+        problem: "KOBİ'ler her küçük sözleşmeyi avukata okutamıyor; 18. maddedeki gizli cezai şartlar yüz binlerce lira zarara sebep oluyor.",
+        features: [
+          "Word (.docx) üzerinde 'Değişiklikleri Takip Et' formatında kırmızı çizgi (Redline) çıktısı.",
+          "1-100 arası Sözleşme Risk Skoru (Fesih, Cezai Şart, Sorumluluk Sınırı).",
+          "Eksik KVKK ve mücbir sebep maddelerini tespit etme."
+        ],
+        audience: "Hukuk büroları, avukatlar, sürekli sözleşme imzalayan KOBİ kurucuları ve ajanslar.",
+        revenue: "Pro: 1.490 ₺/ay (30 sözleşme) · Kurumsal: 4.900 ₺/ay · Tekil: 250 ₺/sözleşme.",
+        benchmarks: "Robin AI (Anthropic destekli hukuk devi), Ironclad, Klarity.",
+        stack: "Gemini 1.5 Pro (Geniş bağlam) + python-docx + LangChain RAG + Zero Retention API",
+        mvp: "6 - 8 Gün"
       },
       {
         id: "11",
-        title: "GearShare Studio",
-        tagline: "Profesyonel Kamera & Ekipman Kiralama Ağı",
-        category: "MARKETPLACE",
-        categoryLabel: "Pazar Yeri & Kiralama",
-        badge: "🎥 Yüksek Sepet Tutarı",
-        score: "8.9 / 10",
-        buildDays: "6 - 8 Gün",
-        revenueModel: "%12 - %15 Kiralama Komisyonu",
-        problem: "Fotoğraf ve sinema ekipmanları yüz binlerce lira; ekipman sahiplerinin cihazları ise ayın 20 günü dolapta yatıyor.",
-        solution: "TCKN doğrulamalı, provizyon depozito blokeli ve dijital kira sözleşmeli güvenli kamera/lens/drone kiralama ağı.",
-        target: "Fotoğrafçılar, klip yönetmenleri, YouTuber'lar, kiralama şirketleri.",
-        benchmark: "ShareGrid ($1B+ ekipman hacmi), Fat Llama",
-        features: ["Kimlik & Risk Doğrulama", "Müsaitlik Takvimi", "Dijital Sözleşme", "Kart Depozito Blokesi"]
+        category: "04-dikey-ai-saas-ve-sektorel",
+        categoryLabel: "Dikey AI SaaS",
+        title: "TaxAudit AI",
+        tag: "Fatura Anomali & Ceza Kalkanı",
+        score: "17/20",
+        slogan: "Binlerce e-fatura ve banka ekstresini tarayan; mükerrer ödemeleri, KDV oranı hatalarını ve gider yazılamayacak harcamaları yakalayan finansal zeka.",
+        problem: "Mali müşavirler dönem sonunda binlerce faturayı tek tek elle kontrol ederken gözden kaçan hatalar yüzünden ağır vergi cezaları kesiliyor.",
+        features: [
+          "Mükerrer fatura no ve aynı IBAN şüpheli eşleşmelerini yakalama.",
+          "Ürün cinsine göre KDV oranının (%1, %10, %20) yasal mevzuata uygunluk denetimi.",
+          "Kanunen Kabul Edilmeyen Gider (KKEG) tespiti."
+        ],
+        audience: "Mali müşavirler (SMMM/YMM), KOBİ finans birimleri ve e-ticaret şirketleri.",
+        revenue: "Ofis: 1.250 ₺/ay (50 mükellef) · KOBİ: 2.450 ₺/ay · Yıllık: 25.000 ₺.",
+        benchmarks: "AppZen (Fortune 500 harcama denetim AI devi), Vic.ai, Glean AI.",
+        stack: "Python Polars + Scikit-Learn Anomaly Detection + Gemini Flash + UBL-TR XML",
+        mvp: "6 - 8 Gün"
       },
       {
         id: "12",
-        title: "CreatorCart",
-        tagline: "İçerik Üreticileri İçin Butik Merch & Dijital Ürün Stüdyosu",
-        category: "MARKETPLACE",
-        categoryLabel: "E-Ticaret & Merch",
-        badge: "🎨 Sıfır Stok Modeli",
-        score: "9.2 / 10",
-        buildDays: "5 - 7 Gün",
-        revenueModel: "%25 Ürün Satış Kârı + Pro SaaS",
-        problem: "Orta ölçekli influencer'lar takipçilerine tişört veya e-kitap satmak istiyor; ama kargo, stok ve şirket işlerinden çekiniyorlar.",
-        solution: "Sıfır stokla (Print-on-Demand) 10 dakikada mağaza açtıran; sipariş gelince basıp kargolayan butik satış altyapısı.",
-        target: "YouTuber'lar, fitness koçları, çizerler, podcast yayıncıları.",
-        benchmark: "Fourthwall ($30M+), Stan Store, Spring",
-        features: ["10 Dakikada Mağaza", "3D Tişört Mockup Önizleme", "Dijital Dosya Satışı", "Otomatik Kargo"]
+        category: "04-dikey-ai-saas-ve-sektorel",
+        categoryLabel: "Dikey AI SaaS",
+        title: "CostCraft AI",
+        tag: "Mimari PDF Metraj & Maliyet Motoru",
+        score: "15/20",
+        slogan: "Mimari ve statik PDF paftalardan duvar alanını, beton hacmini ve demir tonajını otomatik çıkaran; güncel birim fiyatlarla ihale cetveli oluşturan inşaat SaaS'ı.",
+        problem: "Cetvelle veya AutoCAD ile paftadan metraj çıkarmak 10-15 gün sürüyor; yapılan hesap hataları şantiyede yüz binlerce lira israfa yol açıyor.",
+        features: [
+          "Ölçekli PDF paftadan duvar ve oda alanlarını otomatik segmentasyonla çıkarma.",
+          "Resmi Çevre ve Şehircilik Bakanlığı poz numaralarıyla eşleştirme.",
+          "Taşeronlar için Excel formatında ihale teklif isteme cetveli oluşturma."
+        ],
+        audience: "Müteahhitler, taşeronlar (seramik, alçıpan, sıva ustaları) ve hakediş mühendisleri.",
+        revenue: "Aylık: 2.900 ₺/ay (5 proje) · Kurumsal: 9.900 ₺/ay · Proje başı: 1.200 ₺.",
+        benchmarks: "Togal.AI (ABD mimari metraj lideri), Kreoo, Countfire.",
+        stack: "OpenCV + Gemini 1.5 Pro Multimodal + Shapely / PyMuPDF + Fabric.js Canvas",
+        mvp: "7 - 10 Gün"
+      },
+      {
+        id: "13",
+        category: "05-uretken-medya-ve-pazarlama",
+        categoryLabel: "Üretken Medya & Video",
+        title: "AdMorph AI",
+        tag: "Tek Fotodan TikTok & Reels Fabrikası",
+        score: "18/20",
+        slogan: "Ürünün tek bir beyaz fon fotoğrafından viral TikTok/Reels videoları, yapay zeka mankenli giydirme, dinamik altyazı ve senaryolu seslendirme üreten reklam stüdyosu.",
+        problem: "Video olmadan e-ticarette satış yapılamıyor. Manken kiralamak, stüdyo kurmak ve kurgucu tutmak tek çekim için 20.000 - 50.000 ₺ tutuyor.",
+        features: [
+          "Sanal Manken Giydirme (Virtual Try-On): Elbiseyi farklı beden mankenlerde gösterme.",
+          "İlk 3 saniyede izleyiciyi yakalayan viral hook senaryosu üretici.",
+          "TikTok tarzı zıplayan dinamik altyazı ve trend arka plan müzikleri."
+        ],
+        audience: "Giyim/takı butikleri, Trendyol/Amazon satıcıları, dropshipping ve reklam ajansları.",
+        revenue: "Starter: 690 ₺/ay (20 video) · Pro Butik: 1.890 ₺/ay (80 video) · Ajans: 5.900 ₺/ay.",
+        benchmarks: "CapCut Commerce Pro, Creatify.ai, Oxolo.",
+        stack: "Runway Gen-3 / Kling API + ElevenLabs + Remotion (React Video) + Whisper",
+        mvp: "6 - 8 Gün"
+      },
+      {
+        id: "14",
+        category: "05-uretken-medya-ve-pazarlama",
+        categoryLabel: "Üretken Medya & Video",
+        title: "HeroTale AI",
+        tag: "Kişiselleştirilmiş Çocuk Masal Stüdyosu",
+        score: "17/20",
+        slogan: "Çocuğun fotoğrafını ve ilgi alanlarını yükleyen ebeveyne; çocuğun başkahraman olduğu 10 sayfalık özgün çizimli ve seslendirmeli interaktif masal kitabı üreten platform.",
+        problem: "Çocuklar klasik kitaplardan sıkılıyor; ebeveynler kalıcı ve duygusal hediyeler bulmakta zorlanıyor.",
+        features: [
+          "LoRA / FaceID ile çocuğun yüzünü ve saçını tüm sayfalarda birebir koruma.",
+          "Paylaşma, cesaret veya doğa sevgisi gibi velinin seçtiği temada pedagojik hikaye.",
+          "Web üzerinde çevirmeli sesli kitap ve 300 DPI ciltli matbaa baskı PDF'i."
+        ],
+        audience: "3-10 yaş çocuğu olan veliler, hediye arayan akrabalar ve kreşler.",
+        revenue: "Dijital + Sesli Kitap: 199 ₺ · Lüks Sert Kapak Basılı Kitap: 690 ₺ (Kâr: ~570 ₺).",
+        benchmarks: "Wonderbly (100M $+ satış yapan çocuk kitabı devi), Oscar Stories.",
+        stack: "Flux.1 / SDXL (IP-Adapter) + Gemini 1.5 Pro + ElevenLabs + Matbaa Webhook",
+        mvp: "5 - 7 Gün"
+      },
+      {
+        id: "15",
+        category: "05-uretken-medya-ve-pazarlama",
+        categoryLabel: "Üretken Medya & Video",
+        title: "RoomMorph AI",
+        tag: "Eskizden 4K 3D Render & Dekorasyon",
+        score: "16/20",
+        slogan: "Mimarın basit el çiziminden veya boş oda fotoğrafından; İskandinav, Minimalist veya Luxury tarzlarında 10 saniyede fotogerçekçi 3D render üreten motor.",
+        problem: "3ds Max ile render almak günler sürüyor; evini tadilat yaptıranlar hangi eşyanın nasıl duracağını hayal edemiyor.",
+        features: [
+          "ControlNet Depth ile odanın ölçülerini ve kolon/kiriş geometrisini koruma.",
+          "Tek tıkla Japandi, Modern Luxury, Loft stillerine dönüşüm.",
+          "Emlakçılar için boş daireleri mobilyalı gösterme (Virtual Staging)."
+        ],
+        audience: "İç mimarlar, dekorasyon mağazaları ve portföyünü sergileyen emlak ofisleri.",
+        revenue: "Mimar Pro: 990 ₺/ay (100 render) · Stüdyo: 2.900 ₺/ay · Tekil: 390 ₺.",
+        benchmarks: "Interior AI (Pieter Levels), RoomGPT, Planner 5D AI.",
+        stack: "Stable Diffusion XL / Flux + ControlNet Depth/Canny + Fal.ai GPU API",
+        mvp: "5 - 7 Gün"
+      },
+      {
+        id: "16",
+        category: "06-egitim-edtech-ve-kisisel-ai",
+        categoryLabel: "Kişisel AI & Eğitim",
+        title: "Socrates AI",
+        tag: "Sokratik Sınav Kurtarma Koçu",
+        score: "18/20",
+        slogan: "Çözülemeyen sorunun fotoğrafını çektiğinde doğrudan cevabı kopyalatmak yerine; Sokratik ipuçlarıyla mantığı kavratan 7/24 kişisel yapay zeka özel ders hocası.",
+        problem: "ChatGPT öğrenciye doğrudan cevabı verip tembelleştiriyor. Özel ders ücretleri ise saatlik 1.500 - 3.500 ₺.",
+        features: [
+          "Fotoğraftan karmaşık matematik/fizik denklemlerini anında LaTeX'e çevirme.",
+          "Öğrencinin seviyesine göre 3 kademeli Sokratik ipucu modu.",
+          "Öğrencinin hangi konularda temel eksiği olduğunu gösteren kazanım haritası."
+        ],
+        audience: "Mühendislik öğrencileri (Statik, Mukavemet, Calculus) ve YKS/LGS öğrencileri.",
+        revenue: "Aylık Öğrenci: 199 ₺/ay · Dönemlik Sınav Kampı: 690 ₺ · Okul Lisansı: 50 ₺/öğrenci.",
+        benchmarks: "Khanmigo (Khan Academy Sokratik asistanı), Photomath, StudyX.",
+        stack: "Gemini 1.5 Pro Multimodal + MathJax / KaTeX + Web Audio API",
+        mvp: "4 - 6 Gün"
+      },
+      {
+        id: "17",
+        category: "06-egitim-edtech-ve-kisisel-ai",
+        categoryLabel: "Kişisel AI & Eğitim",
+        title: "PhonoRead AI",
+        tag: "Fonetik Çocuk Okuma & Telaffuz Koçu",
+        score: "15/20",
+        slogan: "İlkokul 1. sınıf öğrencisinin sesli okumasını dinleyip; hatalı birleştirilen heceleri ekranda anlık renklerle gösteren ve telaffuzu düzelten dijital sınıf öğretmeni.",
+        problem: "Evde okuma alıştırması yaparken ebeveynler sabırsızlanıp kızıyor, çocuk dersten soğuyor; disleksi ise geç fark ediliyor.",
+        features: [
+          "Hece düzeyinde zaman damgalı fonetik ses tanıma (Karaoke gibi kelime takibi).",
+          "Çocuğun okuma alışkanlığını destekleyen oyunlaştırılmış yıldız/akvaryum ödülleri.",
+          "Veliye haftalık ses ve telaffuz karnesi raporu."
+        ],
+        audience: "1. ve 2. sınıf öğrencileri, disleksi eğilimi olan çocuklar ve sınıf öğretmenleri.",
+        revenue: "Aylık Veli: 149 ₺/ay · Yıllık: 1.190 ₺ · Kolej Lisansı: 35 ₺/öğrenci.",
+        benchmarks: "Amira Learning (ABD'de milyonlarca öğrencinin AI okuma koçu), Ello.",
+        stack: "Whisper Phoneme Alignment / Google ASR + Web Audio + Vue / Canvas",
+        mvp: "6 - 8 Gün"
+      },
+      {
+        id: "18",
+        category: "07-gelistirici-ve-operasyon-ai",
+        categoryLabel: "DevTools & Veri",
+        title: "RefactorBot AI",
+        tag: "Legacy Kod Modernizasyon & Test Ajanı",
+        score: "15/20",
+        slogan: "Eski PHP veya spagetti JavaScript kod depolarını modern TypeScript mimarisine dönüştüren ve %100 kapsama oranlı testleri üreten otonom yazılım mühendisi.",
+        problem: "Yazılımcılar test yazmaktan nefret ediyor; eski kod tabanlarına dokunmaya kimse cesaret edemiyor ve teknik borç şirketleri kilitliyor.",
+        features: [
+          "Soyut Sözdizimi Ağacı (AST) ile bağımlılık grafiğini çıkarma.",
+          "Tip güvenli TypeScript ve modüler mimariye otomatik refactor.",
+          "Tüm uç senaryoları test eden Jest / Node:testassertion testleri yazma.",
+          "Doğrudan GitHub'a test edilmiş Pull Request açma."
+        ],
+        audience: "Teknoloji danışmanlık firmaları, büyüyen SaaS girişimleri ve kurumsal IT ekipleri.",
+        revenue: "Geliştirici: 29 $/ay · Takım: 199 $/ay · Kurumsal On-Prem: 20.000 $+.",
+        benchmarks: "Augment Code, Qodo (CodiumAI), Codacy AI.",
+        stack: "Claude 3.5 Sonnet / Gemini 1.5 Pro + Tree-sitter + Docker Sandbox",
+        mvp: "7 - 10 Gün"
+      },
+      {
+        id: "19",
+        category: "07-gelistirici-ve-operasyon-ai",
+        categoryLabel: "DevTools & Veri",
+        title: "TalkToDB AI",
+        tag: "Doğal Dil Veri Analisti (Text-to-SQL)",
+        score: "18/20",
+        slogan: "Şirket yöneticisinin 'Geçen ay en çok kâr getiren ilk 5 ürünümüz neydi?' gibi Türkçe sorusunu doğrudan SQL'e çevirip canlı grafiklerle yanıtlayan veri analisti.",
+        problem: "Yöneticiler anlık karar almak için veriye ihtiyaç duyuyor ama SQL bilmiyor. PowerBI dashboardları kurmak ise haftalar sürüyor.",
+        features: [
+          "Müşteri verisini modele göndermeden yalnızca şema metadata'sını bağlam alma (Zero Leak).",
+          "Read-Only replica üzerinde güvenli SELECT sorguları yürütme.",
+          "Dinamik Chart.js grafikleri ve tek tıkla PowerPoint/PDF yönetim sunumu üretimi."
+        ],
+        audience: "Şirket kurucuları, CEO'lar, e-ticaret ve finans yöneticileri.",
+        revenue: "KOBİ: 1.990 ₺/ay · Kurumsal: 7.500 ₺/ay · On-Prem: 45.000 ₺.",
+        benchmarks: "Defog.ai (YC destekli Text-to-SQL lideri), Vanna.ai, Julius AI.",
+        stack: "Vanna.ai + Gemini 1.5 Flash + PostgreSQL Read Replica + Chart.js",
+        mvp: "5 - 7 Gün"
+      },
+      {
+        id: "20",
+        category: "07-gelistirici-ve-operasyon-ai",
+        categoryLabel: "DevTools & Veri",
+        title: "VaultBrain Box",
+        tag: "Çevrimdışı Donanım RAG Kutusu",
+        score: "14/20",
+        slogan: "İnternete asla bağlanmayan; şirket sözleşmelerini ve teknik kılavuzlarını yerel NVMe diskte saklayıp personelin sorularını sıfır sızıntıyla yanıtlayan tak-çalıştır AI cihazı.",
+        problem: "Savunma sanayi, hastaneler ve hukuk büroları veri sızıntısı korkusuyla bulut yapay zekalarını (ChatGPT) kullanamıyor.",
+        features: [
+          "%100 Air-Gapped: Dış dünyaya tek bir internet paketi dahi göndermez.",
+          "Yerel Llama 3.3 / Qwen 2.5 modelleriyle GPU üzerinde 40 token/sn hız.",
+          "Rol bazlı erişim güvenliği: Stajyerler İK veya CEO maaş dosyalarını göremez.",
+          "Şirket sistem odasına koyulmaya hazır kompakt mini sunucu/kasa."
+        ],
+        audience: "Savunma sanayi firmaları, büyük hukuk büroları, hastaneler ve bankalar.",
+        revenue: "Cihaz + Yazılım: 120.000 ₺ - 250.000 ₺ · Yıllık Bakım: 35.000 ₺/yıl.",
+        benchmarks: "AnythingLLM, Danswer (Onyx kurumsal yerel RAG), Lamini.",
+        stack: "Ollama / vLLM + Llama 3.3 70B + Qdrant Local + Docker Compose + Mac Studio / RTX",
+        mvp: "7 - 10 Gün"
       }
     ];
 
-    const ideasGrid = document.getElementById('ideasGrid');
-    const searchInput = document.getElementById('searchInput');
+    let currentCategory = 'all';
 
-    function renderIdeas(items) {
-      if (!ideasGrid) return;
-      ideasGrid.innerHTML = '';
+    function renderCards(ideas) {
+      const grid = document.getElementById('ideasGrid');
+      const noResults = document.getElementById('noResults');
 
-      if (items.length === 0) {
-        ideasGrid.innerHTML = `
-          <div class="col-span-full py-12 text-center text-slate-400">
-            <p class="text-base font-semibold text-slate-300">Aradığınız kriterlere uygun fikir bulunamadı.</p>
-            <p class="text-xs text-slate-500 mt-1">Farklı anahtar kelimeler deneyebilir veya filtreyi temizleyebilirsiniz.</p>
-          </div>
-        `;
+      if (ideas.length === 0) {
+        grid.innerHTML = '';
+        noResults.classList.remove('hidden');
         return;
       }
 
-      items.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'bg-[#0F0F28]/80 border border-slate-800 hover:border-purple-500/50 p-6 rounded-2xl flex flex-col justify-between space-y-4 transition duration-300 hover:-translate-y-1 shadow-lg';
-        card.innerHTML = `
+      noResults.classList.add('hidden');
+      grid.innerHTML = ideas.map(idea => `
+        <div class="glass glass-hover p-6 rounded-2xl flex flex-col justify-between transition-all duration-300 relative group">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-2">
-              <span class="text-[11px] font-mono text-purple-400 bg-purple-950/60 px-2.5 py-0.5 rounded-lg border border-purple-800/40">${item.categoryLabel}</span>
-              <span class="text-[11px] font-bold text-amber-400">${item.badge}</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-brand-500/15 text-brand-300 border border-brand-500/30">
+                ${idea.categoryLabel}
+              </span>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 mono">
+                ★ ${idea.score}
+              </span>
             </div>
 
-            <h3 class="text-xl font-extrabold text-white mt-1">${item.title}</h3>
-            <p class="text-xs font-semibold text-cyan-300 mt-0.5">${item.tagline}</p>
+            <div class="text-[11px] font-mono text-cyan-400 mb-1">AI PROJE #${idea.id}</div>
+            <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors flex items-center gap-1.5">
+              ${idea.title}
+            </h3>
+            <div class="text-xs text-brand-300 font-medium mt-0.5">${idea.tag}</div>
 
-            <div class="mt-3.5 space-y-2 text-xs text-slate-300 leading-relaxed">
-              <p><strong class="text-slate-400">🔴 Problem:</strong> ${item.problem}</p>
-              <p><strong class="text-emerald-400">🟢 Çözüm:</strong> ${item.solution}</p>
-            </div>
-
-            <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-1.5 text-xs">
-              <div class="flex items-center justify-between text-slate-400">
-                <span>Gelir Modeli:</span>
-                <span class="font-bold text-amber-400 font-mono">${item.revenueModel}</span>
-              </div>
-              <div class="flex items-center justify-between text-slate-400">
-                <span>Geliştirme Eforu:</span>
-                <span class="font-mono text-cyan-300 font-semibold">${item.buildDays}</span>
-              </div>
-              <div class="flex items-center justify-between text-slate-400">
-                <span>Fizibilite Skoru:</span>
-                <span class="font-mono text-emerald-400 font-bold">${item.score}</span>
-              </div>
-            </div>
-
-            <div class="mt-3 flex flex-wrap gap-1">
-              ${item.features.map(f => `<span class="bg-slate-800/80 text-[10px] text-slate-300 px-2 py-0.5 rounded">${f}</span>`).join('')}
-            </div>
+            <p class="text-xs text-slate-400 mt-3 line-clamp-3 leading-relaxed">
+              ${idea.slogan}
+            </p>
           </div>
 
-          <div class="pt-3 border-t border-slate-800/60 flex items-center justify-between text-xs">
-            <span class="text-[11px] text-slate-500 font-mono">Ref: ${item.benchmark.split(',')[0]}</span>
-            <span class="text-purple-400 font-semibold cursor-pointer hover:underline" onclick="alert('Detaylı doküman: fikirler/ altında markdown dosyasında mevcuttur.')">Detayları İncele →</span>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+            <div class="text-[11px] text-slate-400">
+              MVP: <span class="text-slate-200 font-medium">${idea.mvp}</span>
+            </div>
+            <button onclick="openModal('${idea.id}')" class="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-brand-600 text-xs font-medium text-white transition flex items-center gap-1">
+              İncele <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
           </div>
-        `;
-        ideasGrid.appendChild(card);
-      });
+        </div>
+      `).join('');
 
-      if (window.lucide) window.lucide.createIcons();
+      lucide.createIcons();
     }
 
-    renderIdeas(IDEAS);
-
-    // Filter by Category
-    let currentCat = 'ALL';
-    document.querySelectorAll('#categoryTabs .cat-pill').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        document.querySelectorAll('#categoryTabs .cat-pill').forEach(b => {
-          b.classList.remove('active', 'bg-purple-600', 'text-white');
-          b.classList.add('bg-[#0F0F28]', 'text-slate-300');
-        });
-        e.currentTarget.classList.add('active', 'bg-purple-600', 'text-white');
-        e.currentTarget.classList.remove('bg-[#0F0F28]', 'text-slate-300');
-        currentCat = e.currentTarget.getAttribute('data-cat');
-        applyFilters();
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.getAttribute('data-cat') === cat) {
+          btn.className = "cat-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium transition bg-brand-600 text-white shadow-sm shadow-brand-500/30";
+        } else {
+          btn.className = "cat-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white glass transition";
+        }
       });
-    });
+      applyFilters();
+    }
 
-    // Search input
-    if (searchInput) {
-      searchInput.addEventListener('input', () => {
-        applyFilters();
-      });
+    function searchCards() {
+      applyFilters();
     }
 
     function applyFilters() {
-      const q = (searchInput?.value || '').toLowerCase().trim();
-      const filtered = IDEAS.filter(item => {
-        const matchesCat = currentCat === 'ALL' || item.category === currentCat;
-        const matchesQuery = !q || 
-          item.title.toLowerCase().includes(q) ||
-          item.tagline.toLowerCase().includes(q) ||
-          item.problem.toLowerCase().includes(q) ||
-          item.solution.toLowerCase().includes(q) ||
-          item.target.toLowerCase().includes(q) ||
-          item.categoryLabel.toLowerCase().includes(q);
-        return matchesCat && matchesQuery;
-      });
-      renderIdeas(filtered);
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      let filtered = ideasData;
+
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(item => item.category === currentCategory);
+      }
+
+      if (query) {
+        filtered = filtered.filter(item => 
+          item.title.toLowerCase().includes(query) ||
+          item.tag.toLowerCase().includes(query) ||
+          item.slogan.toLowerCase().includes(query) ||
+          item.problem.toLowerCase().includes(query) ||
+          item.audience.toLowerCase().includes(query)
+        );
+      }
+
+      renderCards(filtered);
     }
+
+    function openModal(id) {
+      const idea = ideasData.find(item => item.id === id);
+      if (!idea) return;
+
+      document.getElementById('modalCategoryBadge').textContent = idea.categoryLabel;
+      document.getElementById('modalScoreBadge').textContent = `Fizibilite & Gelir Skoru: ${idea.score}`;
+      document.getElementById('modalTitle').textContent = `${idea.title} (${idea.tag})`;
+      document.getElementById('modalSlogan').textContent = `"${idea.slogan}"`;
+      document.getElementById('modalProblem').textContent = idea.problem;
+
+      const featList = document.getElementById('modalFeatures');
+      featList.innerHTML = idea.features.map(f => `<li>${f}</li>`).join('');
+
+      document.getElementById('modalAudience').textContent = idea.audience;
+      document.getElementById('modalRevenue').textContent = idea.revenue;
+      document.getElementById('modalBenchmarks').textContent = idea.benchmarks;
+      document.getElementById('modalStack').textContent = idea.stack;
+      document.getElementById('modalMVP').textContent = idea.mvp;
+
+      document.getElementById('ideaModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeModal() {
+      document.getElementById('ideaModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('ideaModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+
+    // Initial Render
+    renderCards(ideasData);
   </script>
 </body>
 </html>
