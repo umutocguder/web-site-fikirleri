@@ -1,0 +1,62 @@
+<!-- Created by 11Hopem -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080816"/>
+      <stop offset="50%" stop-color="#0F0F28"/>
+      <stop offset="100%" stop-color="#1A153A"/>
+    </linearGradient>
+    <linearGradient id="violetCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="bulbGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#8B5CF6" stroke-opacity="0.3" stroke-width="3"/>
+
+  <!-- Synaptic Idea Network Nodes & Orbit Lines -->
+  <g opacity="0.2" stroke="#8B5CF6" stroke-width="1.5">
+    <circle cx="256" cy="256" r="190" fill="none" stroke-dasharray="8 8" />
+    <circle cx="256" cy="256" r="130" fill="none" />
+    <line x1="80" y1="256" x2="432" y2="256" />
+    <line x1="256" y1="80" x2="256" y2="432" />
+  </g>
+
+  <!-- Orbiting Idea Sparks -->
+  <circle cx="120" cy="180" r="6" fill="#06B6D4" filter="url(#glow)"/>
+  <circle cx="392" cy="180" r="7" fill="#A855F7" filter="url(#glow)"/>
+  <circle cx="370" cy="360" r="6" fill="#F59E0B" filter="url(#glow)"/>
+  <circle cx="140" cy="350" r="5" fill="#10B981" filter="url(#glow)"/>
+
+  <!-- Modern Stylized Lightbulb & Rocket Monogram Emblem -->
+  <!-- Bulb Outer Silhouette -->
+  <path d="M 256 120 C 196 120 156 166 156 220 C 156 260 184 290 206 316 L 206 342 C 206 348 212 354 220 354 L 292 354 C 300 354 306 348 306 342 L 306 316 C 328 290 356 260 356 220 C 356 166 316 120 256 120 Z" 
+        fill="none" stroke="url(#violetCyan)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- Filament Idea Spark: Cosmic Sparkle Star -->
+  <path d="M 256 170 Q 256 220 286 220 Q 256 220 256 270 Q 256 220 226 220 Q 256 220 256 170 Z" 
+        fill="url(#bulbGlow)" filter="url(#glow)"/>
+
+  <!-- Base Screw Threads -->
+  <line x1="222" y1="370" x2="290" y2="370" stroke="url(#violetCyan)" stroke-width="14" stroke-linecap="round"/>
+  <line x1="230" y1="392" x2="282" y2="392" stroke="url(#violetCyan)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="240" y1="412" x2="272" y2="412" stroke="url(#bulbGlow)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Energy Radiation Rays -->
+  <line x1="256" y1="70" x2="256" y2="92" stroke="#FDE047" stroke-width="6" stroke-linecap="round"/>
+  <line x1="150" y1="110" x2="168" y2="128" stroke="#FDE047" stroke-width="6" stroke-linecap="round"/>
+  <line x1="362" y1="110" x2="344" y2="128" stroke="#FDE047" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="210" x2="124" y2="216" stroke="#06B6D4" stroke-width="6" stroke-linecap="round"/>
+  <line x1="412" y1="210" x2="388" y2="216" stroke="#A855F7" stroke-width="6" stroke-linecap="round"/>
+</svg>

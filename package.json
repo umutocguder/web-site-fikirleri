@@ -1,0 +1,22 @@
+{
+  "name": "web-site-fikirleri",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "11Hopem Venture Lab — Yüksek Dönüşümlü Web Sitesi ve Micro-SaaS Fikirleri Bankası",
+  "author": "11Hopem <umutocgdr@gmail.com>",
+  "license": "Proprietary",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/*.test.js",
+    "dev": "npx -y serve -l 3000 .",
+    "start": "npx -y serve -l 3000 public"
+  },
+  "keywords": [
+    "web-site-fikirleri",
+    "saas-ideas",
+    "startup-ideas",
+    "venture-lab",
+    "11hopem"
+  ]
+}

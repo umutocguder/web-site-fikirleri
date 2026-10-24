@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://web-site-fikirleri.vercel.app/sitemap.xml
