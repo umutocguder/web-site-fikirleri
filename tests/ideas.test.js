@@ -14,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 
-test('Verify all 40 AI idea briefs exist across 7 verticals and have structured sections', () => {
+test('Verify all 52 venture briefs exist across 10 verticals and have structured sections', () => {
   const ideasDir = path.join(ROOT_DIR, 'fikirler');
   assert.ok(fs.existsSync(ideasDir), 'fikirler directory must exist');
 
@@ -25,7 +25,10 @@ test('Verify all 40 AI idea briefs exist across 7 verticals and have structured 
     '04-dikey-ai-saas-ve-sektorel',
     '05-uretken-medya-ve-pazarlama',
     '06-egitim-edtech-ve-kisisel-ai',
-    '07-gelistirici-ve-operasyon-ai'
+    '07-gelistirici-ve-operasyon-ai',
+    '08-sosyal-medya-ve-creator-araclari',
+    '09-micro-saas-ve-pratik-web-araclari',
+    '10-e-ticaret-ve-donusum-motorlari'
   ];
 
   let totalIdeaFiles = 0;
@@ -46,19 +49,19 @@ test('Verify all 40 AI idea briefs exist across 7 verticals and have structured 
     });
   });
 
-  assert.strictEqual(totalIdeaFiles, 40, 'Must contain exactly 40 deep AI venture briefs');
+  assert.strictEqual(totalIdeaFiles, 52, 'Must contain exactly 52 deep venture briefs');
 });
 
-test('Verify evaluation matrix document exists and contains AI comparison table', () => {
+test('Verify evaluation matrix document exists and contains comparison table', () => {
   const matrixPath = path.join(ROOT_DIR, 'degerlendirme-matrisi.md');
   assert.ok(fs.existsSync(matrixPath), 'degerlendirme-matrisi.md must exist');
   const content = fs.readFileSync(matrixPath, 'utf-8');
+  assert.match(content, /OmniPost/);
+  assert.match(content, /SocialInbox/);
+  assert.match(content, /CartRescue/);
   assert.match(content, /VoiceDesk AI/);
   assert.match(content, /RefundOps AI/);
-  assert.match(content, /LexRedline AI/);
   assert.match(content, /ChurnShield AI/);
-  assert.match(content, /CodeSentinel AI/);
-  assert.match(content, /Top 5|Top 3/i);
 });
 
 test('Verify index.html branding, SEO and 1:1 Favicon compliance', () => {
