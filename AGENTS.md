@@ -11,15 +11,15 @@
 
 ## Architecture & Tech Stack
 - **Core Engine:** Vanilla HTML5, ES Modules, Tailwind CSS CDN, Lucide Icons CDN.
-- **Content System:** 20 deep structured AI venture briefs across 7 core verticals:
-  1. `01-otonom-ajanlar-ve-otomasyon` (3 briefs)
-  2. `02-sesli-yapay-zeka-ve-iletisim` (3 briefs)
-  3. `03-bilgisayarli-goru-ve-multimodal` (3 briefs)
-  4. `04-dikey-ai-saas-ve-sektorel` (3 briefs)
-  5. `05-uretken-medya-ve-pazarlama` (3 briefs)
-  6. `06-egitim-edtech-ve-kisisel-ai` (2 briefs)
-  7. `07-gelistirici-ve-operasyon-ai` (3 briefs)
-- **Scoring & Comparison Matrix:** `degerlendirme-matrisi.md` (20-point scoring framework)
+- **Content System:** 40 deep structured AI venture briefs across 7 core verticals:
+  1. `01-otonom-ajanlar-ve-otomasyon` (6 briefs: RefundOps, LeadScout, BidForge, ChurnShield, GovGuard, GigPilot)
+  2. `02-sesli-yapay-zeka-ve-iletisim` (6 briefs: VoiceDesk, PolyVoice, ActionNote, MedScribe, CallQualify, AudioAudit)
+  3. `03-bilgisayarli-goru-ve-multimodal` (6 briefs: BuildVision, ShelfEye, ClaimVision, MedVision, CropEye, AntiTheft)
+  4. `04-dikey-ai-saas-ve-sektorel` (6 briefs: LexRedline, TaxAudit, CostCraft, EstateVal, MenuProfit, FreightMatch)
+  5. `05-uretken-medya-ve-pazarlama` (6 briefs: AdMorph, HeroTale, RoomMorph, StyleMorph, ClipViral, ReviewPulse)
+  6. `06-egitim-edtech-ve-kisisel-ai` (4 briefs: Socrates, PhonoRead, KnowBase, LingoNative)
+  7. `07-gelistirici-ve-operasyon-ai` (6 briefs: RefactorBot, TalkToDB, VaultBrain, CodeSentinel, SpecCraft, CloudSaver)
+- **Scoring & Comparison Matrix:** `degerlendirme-matrisi.md` (20-point scoring framework, 40 models ranked)
 - **Testing:** Node.js native test runner (`node --test tests/*.test.js`).
 - **Build / Packaging:** `scripts/build.js` synchronizes catalog files and assets into `public/`.
 - **Hosting & CI/CD:** Vercel Production Deployment + GitHub Actions CI/CD.

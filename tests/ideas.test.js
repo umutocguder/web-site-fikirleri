@@ -14,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 
-test('Verify all 20 AI idea briefs exist across 7 verticals and have structured sections', () => {
+test('Verify all 40 AI idea briefs exist across 7 verticals and have structured sections', () => {
   const ideasDir = path.join(ROOT_DIR, 'fikirler');
   assert.ok(fs.existsSync(ideasDir), 'fikirler directory must exist');
 
@@ -46,7 +46,7 @@ test('Verify all 20 AI idea briefs exist across 7 verticals and have structured 
     });
   });
 
-  assert.strictEqual(totalIdeaFiles, 20, 'Must contain exactly 20 deep AI venture briefs');
+  assert.strictEqual(totalIdeaFiles, 40, 'Must contain exactly 40 deep AI venture briefs');
 });
 
 test('Verify evaluation matrix document exists and contains AI comparison table', () => {
@@ -56,7 +56,9 @@ test('Verify evaluation matrix document exists and contains AI comparison table'
   assert.match(content, /VoiceDesk AI/);
   assert.match(content, /RefundOps AI/);
   assert.match(content, /LexRedline AI/);
-  assert.match(content, /Top 3/i);
+  assert.match(content, /ChurnShield AI/);
+  assert.match(content, /CodeSentinel AI/);
+  assert.match(content, /Top 5|Top 3/i);
 });
 
 test('Verify index.html branding, SEO and 1:1 Favicon compliance', () => {
