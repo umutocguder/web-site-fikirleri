@@ -1,7 +1,7 @@
 <!-- Created by 11Hopem -->
 # 💡 Venture Lab & Innovation Vault
 
-[![Live Demo](https://img.shields.io/badge/live%20demo-web--site--fikirleri.vercel.app-black?logo=vercel)](https://web-site-fikirleri.vercel.app)
+[![Live Demo](https://img.shields.io/badge/live%20demo-web--site--fikirleri.vercel.app-black?logo=vercel)](https://fikirler.11hopem.com)
 [![Ideas](https://img.shields.io/badge/curated%20ideas-52%2B%20Specs-blue.svg)](#ideas-catalog)
 [![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](https://11hopem.com)
 [![Created by 11Hopem](https://img.shields.io/badge/created%20by-11Hopem-orange.svg)](https://11hopem.com)
@@ -13,7 +13,7 @@ An interactive showcase and curated database of **52+ high-conviction digital pr
 ## 🌐 Live Platform
 
 Explore the interactive live web application:  
-👉 **[https://web-site-fikirleri.vercel.app](https://web-site-fikirleri.vercel.app)**
+👉 **[https://fikirler.11hopem.com](https://fikirler.11hopem.com)**
 
 ---
 

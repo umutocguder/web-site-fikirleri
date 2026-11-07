@@ -2,7 +2,7 @@
 
 ## Proje Mimarisi & Standartlar
 - **Proje Adı**: 11Hopem Venture Lab (AI, Micro-SaaS & Web Girişim Fikirleri Bankası)
-- **Canlı URL**: https://web-site-fikirleri.vercel.app
+- **Canlı URL**: https://fikirler.11hopem.com
 - **Teknoloji**: HTML5, Tailwind CSS, Lucide Icons, Vanilla JS, Node.js Test Runner
 - **Telif & Marka**: Created by 11Hopem (https://11hopem.com)
 
